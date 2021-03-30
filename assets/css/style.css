@@ -10,8 +10,10 @@ body {
 }
 
 .header--container {
-    background-image: url("../img/bg.jpeg");
-    background-size: cover;
+    background-image: url("../img/bg_logo--padding.png"), url("../img/bg_blank.jpg");
+    background-size: contain, cover;
+    background-repeat: no-repeat;
+    background-position: center;
     padding: 30px;
     color: white;
     height: 200px;
