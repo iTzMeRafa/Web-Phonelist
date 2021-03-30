@@ -62,6 +62,7 @@
                             placeholder="Suche..."
                             class="form-control"
                             id="search"
+                            autocomplete="off"
                             oninput="search(this.value)"
                         >
                     </div>
@@ -94,7 +95,7 @@
                 <!-- Layout View Mode -->
                 <div class="col-md-3">
                     <div class="viewMode">
-                        <div class="btn-group" role="group">
+                        <div class="btn-group toggleButtonGroup" role="group">
                             <button type="button" id="gridToggleButton" class="btn btn-outline-primary active" onclick="toggleViewMode('grid')">Kachel</button>
                             <button type="button" id="listToggleButton" class="btn btn-outline-primary" onclick="toggleViewMode('list')">Liste</button>
                         </div>
