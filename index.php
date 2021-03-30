@@ -95,8 +95,8 @@
                 <div class="col-md-3">
                     <div class="viewMode">
                         <div class="btn-group" role="group">
-                            <button type="button" class="btn" onclick="toggleViewMode('grid')">Kachel</button>
-                            <button type="button" class="btn" onclick="toggleViewMode('list')">Liste</button>
+                            <button type="button" id="gridToggleButton" class="btn btn-outline-primary active" onclick="toggleViewMode('grid')">Kachel</button>
+                            <button type="button" id="listToggleButton" class="btn btn-outline-primary" onclick="toggleViewMode('list')">Liste</button>
                         </div>
                     </div>
                 </div>
