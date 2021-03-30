@@ -32,13 +32,13 @@
 			// language=HTML
 			html += `
 				<tr>
-				  <th scope="row">${iteration + 1}</th>
-				  <td>${user.name}, ${user.vorname}</td>
-				  <td>${user.telefon}</td>
-				  <td>${user.email}</td>
-				  <td>${user.raum}</td>
-				  <td>${user.gruppetext} (${user.gruppekuerzel})</td>
-				  <td>${user.funktion}</td>
+				  <th class="userList--table" scope="row">${iteration + 1}</th>
+				  <td class="userList--table">${user.name}, ${user.vorname}</td>
+				  <td class="userList--table">${user.telefon}</td>
+				  <td class="userList--table">${user.email}</td>
+				  <td class="userList--table">${user.raum}</td>
+				  <td class="userList--table">${user.gruppetext} (${user.gruppekuerzel})</td>
+				  <td class="userList--table">${user.funktion}</td>
 				</tr>
 			`;
 		});

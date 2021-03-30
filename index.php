@@ -111,7 +111,7 @@
 
             <!-- Grid/List -->
             <div id="userList" class="mt-2">
-                <div id="userData" style="overflow-x: scroll;"></div>
+                <div id="userData"></div>
             </div>
 
         </div>

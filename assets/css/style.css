@@ -24,3 +24,7 @@ body {
 
 .searchResults {
 }
+
+.userList--table {
+    word-break: break-word;
+}
