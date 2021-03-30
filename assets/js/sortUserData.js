@@ -5,13 +5,13 @@
 function sort(sortType) {
     switch(sortType) {
         case 'name':
-            window.filteredUserData = window.filteredUserData.sort(compareName)
+            window.filteredUserData = window.filteredUserData.sort(compareName);
             break;
         case 'abteilung':
-            window.filteredUserData = window.filteredUserData.sort(compareAbteilung)
+            window.filteredUserData = window.filteredUserData.sort(compareAbteilung);
             break;
         case 'telefonnummer':
-            window.filteredUserData = window.filteredUserData.sort(comparePhonenumber)
+            window.filteredUserData = window.filteredUserData.sort(comparePhonenumber);
             break;
     }
 
@@ -40,10 +40,10 @@ function compareAbteilung( a, b ) {
 }
 
 function comparePhonenumber( a, b ) {
-    if ( a.telefonnummer < b.telefonnummer ){
+    if ( a.telefon < b.telefon ){
         return -1;
     }
-    if ( a.telefonnummer > b.telefonnummer ){
+    if ( a.telefon > b.telefon ){
         return 1;
     }
     return 0;

@@ -34,3 +34,9 @@ body {
 .userList--table {
     word-break: break-word;
 }
+
+.card__titleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

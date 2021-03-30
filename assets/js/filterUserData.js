@@ -8,7 +8,7 @@ function renderFilters() {
 	const departmentsEl = document.getElementById('departments');
 
     const defaultOptionEl = document.createElement('a');
-    const defualtValueEl = document.createTextNode('Alle');
+    const defaultValueEl = document.createTextNode('Alle');
 
     defaultOptionEl.className = 'dropdown-item';
     defaultOptionEl.href = '#';
@@ -16,9 +16,12 @@ function renderFilters() {
         filterUserData('all');
     });
 
-    defaultOptionEl.appendChild(defualtValueEl);
+    defaultOptionEl.appendChild(defaultValueEl);
 
     departmentsEl.appendChild(defaultOptionEl);
+
+    // Sort departments by alphabet
+	departments.sort();
 
 	departments.map(department => {
 		const optionEl = document.createElement('a');

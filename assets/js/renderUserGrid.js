@@ -29,10 +29,13 @@
 			html += `
 				<div class="col-md-${12/cardsInRow}">
 					<div class="card mb-3">
-						<div class="card-body"><h5 class="card-title">${user.vorname} ${user.name} </h5>
+						<div class="card-body">
+							<div class="card__titleContainer">
+								<h5 class="card-title">${user.vorname} ${user.name} </h5>
+								<small>${user.funktion}</small>
+							</div>
 							<h6 class="card-subtitle mb-2 text-muted">${user.gruppetext} (${user.gruppekuerzel})</h6>
-							<p class="card-text"><small class="text-muted">${user.funktion}</small></p>
-							<a href="tel:${user.telefon}" data-toggle="tooltip" title="${user.telefon}" class="card-link">Anrufen</a>
+							<p class="card-text"><small class="text-muted">${user.raum}, ${user.telefon}</small></p>
 							<a href="mailto:${user.email}" data-toggle="tooltip" title="${user.email}" class="card-link">E-Mail schreiben</a>
 						</div>
 					</div>
